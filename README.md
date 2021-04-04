@@ -1,3 +1,18 @@
+1. Layout folders: components, server, containers, auth
+2. rcc to create basic react components
+3. npm install @material-ui/icons
+4. npm install @material-ui/core
+5. npm install cors
+6. npm install react-router-dom
+7. Install npm i express jsonwebtoken dotenv
+8. npm install --save-dev nodemon 
+9. Add "devStart": "nodemon server",  to package.json
+10. npm install -g firebase-tools
+11. npm install express --save 
+12. add *.env to gitIgnore file
+13. npm install bcrypt
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
