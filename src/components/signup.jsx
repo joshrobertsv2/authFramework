@@ -18,25 +18,27 @@ const Signup = () => {
 
   // the function that is invoked when a user submits the user registration form
   async function handleSubmit(e) {
+    console.log(firstName);
     // preventDefault prevents user submits on blank forms
     e.preventDefault()
 
+    //creates an object out of all of the datafields
     const fields = {
       "first name": firstName,
       "last name": lastName,
-      email,
-      password: password,
+      "email":email,
+      "password": password,
       "re-enter password": reenterPassword
     }
 
-    if (fields.password !== fields.reenterPassword) {
+    if (password !== reenterPassword) {
       return setError("Passwords do not match")
     }
 
     try {
       setError("")
       // sends user data to the database
-      await signup(email, password)
+      await signup(fields)
       history.push("/")
     } catch {
       setError("Failed to create an account")

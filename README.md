@@ -1,4 +1,4 @@
-1. Layout folders: components, server, containers, auth
+1. Layout folders: components, server, containers, auth, routes
 2. rcc to create basic react components
 3. npm install @material-ui/icons
 4. npm install @material-ui/core
