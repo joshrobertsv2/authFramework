@@ -26,13 +26,13 @@ const Signup = () => {
     const fields = {
       "first name": firstName,
       "last name": lastName,
-      "email":email,
+      "email": email,
       "password": password,
       "re-enter password": reenterPassword
     }
 
     if (password !== reenterPassword) {
-      return setError("Passwords do not match")
+      return setError("Passwords do not match-signup:35")
     }
 
     try {
@@ -41,7 +41,7 @@ const Signup = () => {
       await signup(fields)
       history.push("/")
     } catch {
-      setError("Failed to create an account")
+      setError("Failed to create an account-signup:44")
     }
   }
 

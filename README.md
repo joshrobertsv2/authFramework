@@ -10,7 +10,7 @@
 10. npm install -g firebase-tools
 11. npm install express --save 
 12. add *.env to gitIgnore file
-13. npm install bcrypt
+13. npm install bcryptjs
 
 
 # Getting Started with Create React App
